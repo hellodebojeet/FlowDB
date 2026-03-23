@@ -8,7 +8,7 @@
 
 FlowDB is a relational database engine written in Go that implements a strict pipeline architecture where data flows from storage through indexing, transaction processing, and vectorized execution. It exists to demonstrate how tightly coupled, performance-aware design decisions in each layer compound to create a system greater than the sum of its parts. Unlike typical educational databases, FlowDB implements production-grade techniques: slotted pages with compaction, clock-sweep buffer pool with hand-to-hand locking, ARIES-style WAL with group commit, MVCC with predicate-aware visibility vectors, and vectorized query execution with 1024-tuple batches.
 
-## Why This Project Exists
+## Project Philosophy
 
 Most database side projects either reimplement toy versions of individual components (e.g., "a B-tree in 200 lines") or bolt together off-the-shelf libraries without understanding their interaction costs. FlowDB exists to explore the performance implications of correct component integration: how buffer pool page replacement policies interact with index node splits, how WAL group commit batch sizes affect MVCC snapshot isolation, and how vectorized execution width must match cache line sizes for optimal SIMD utilization. Each layer makes explicit tradeoffs that prioritize real-world workload characteristics over theoretical purity.
 
