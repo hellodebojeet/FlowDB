@@ -1,6 +1,5 @@
 # FlowDB
 
-[![CI](https://github.com/Linux/flowdb/actions/workflows/ci.yml/badge.svg)](https://github.com/Linux/flowdb/actions/workflows/ci.yml)
 [![Go Version](https://img.shields.io/badge/go-1.22%2B-blue.svg)](https://golang.org/dl/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![TPC-H Q1](https://img.shields.io/badge/TPC--H%20Q1-TBD-lightgrey.svg)](https://www.tpc.org/tpch/)
